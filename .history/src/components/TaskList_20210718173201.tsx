@@ -40,9 +40,9 @@ export function TaskList() {
 
   function handleRemoveTask(id: number) {
     // Remova uma task da listagem pelo ID
-    const filteredTasks = tasks.filter(task => task.id !== id); // filtra todos as tasks que não correspondem à escolhida e as salva em um novo array
+    const filteredTasks = tasks.filter(task => task.id !== id);
 
-    setTasks(filteredTasks); // as demais tasks são mantidas, exceto a selecionada que será "removida"
+    setTasks(filteredTasks);
   }
 
   return (
